@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Ms Ngân English",
+      "hasCanvas": false,
+      "bodyTextLen": 1443,
+      "bodyTextHash": "5eab9a643282a35a84d2e4e485aa6258fa60ef692e71fa4dc4b550059815adfc",
+      "bodyTextPrefix": "M Ms Ngân English Quản lý lớp học QUẢN LÝ Tổng quan Lịch dạy Điể",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Ms Ngân English",
+      "hasCanvas": false,
+      "bodyTextLen": 1334,
+      "bodyTextHash": "ee82bd67555bae2588aa665aa5e6997cd75fd94e28414c11b1e6957f0e78afe6",
+      "bodyTextPrefix": "Ms Ngân English Thứ Bảy, 12 tháng 9, 2026 Tổng quan XIN CHÀO, LÂ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

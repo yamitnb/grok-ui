@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ms Ngân English — Tổng quan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            page: '#F4F6FB',
+            ink: '#1C2434',
+            mute: '#8B93A7',
+            soft: '#EEF1F8'
+          },
+          boxShadow: {
+            card: '0 10px 30px rgba(28,36,52,0.06)',
+            soft: '0 4px 16px rgba(28,36,52,0.05)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #F4F6FB; }
+    .ring-grad { background: conic-gradient(#ff8a5b, #ff5d8f, #7b6cff, #3ddc97, #ff8a5b); }
+    .bar { border-radius: 8px 8px 4px 4px; }
+  </style>
+</head>
+<body class="text-ink">
+  <div class="min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-[232px] shrink-0 bg-white/70 backdrop-blur border-r border-white/60 px-4 py-5 flex flex-col">
+      <div class="flex items-center gap-3 px-2 mb-8">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-400 to-pink-500 text-white font-bold grid place-items-center">M</div>
+        <div>
+          <div class="font-semibold leading-tight">Ms Ngân English</div>
+          <div class="text-xs text-mute">Quản lý lớp học</div>
+        </div>
+      </div>
+
+      <div class="text-[11px] tracking-wider text-mute px-3 mb-2">QUẢN LÝ</div>
+      <nav class="space-y-1 text-sm">
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-gradient-to-r from-violet-100 to-blue-50 text-indigo-700 font-medium" href="#">
+          <span>▦</span> Tổng quan
+        </a>
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50" href="#"><span>📅</span> Lịch dạy</a>
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50" href="#"><span>☑</span> Điểm danh</a>
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50" href="#"><span>🎓</span> Lớp học</a>
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50" href="#"><span>👤</span> Học sinh</a>
+        <a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-500 hover:bg-slate-50" href="#"><span>③</span> Học phí</a>
+      </nav>
+
+      <div class="mt-auto">
+        <button class="text-sm text-slate-400 px-3 py-2">⇤ Thu gọn</button>
+        <div class="mt-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-pink-50 to-violet-50 p-3">
+          <div class="h-10 w-10 rounded-full bg-slate-300 overflow-hidden grid place-items-center text-xs">LP</div>
+          <div>
+            <div class="text-sm font-medium">Lâm Phạm</div>
+            <div class="text-[11px] text-amber-600">👑 Quản trị</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 p-6 lg:p-8">
+      <div class="text-xs text-mute mb-1">Thứ Bảy, 12 tháng 9, 2026</div>
+      <h1 class="text-2xl font-semibold mb-5">Tổng quan</h1>
+
+      <!-- Greeting -->
+      <section class="bg-white rounded-3xl shadow-soft p-6 mb-5">
+        <div class="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-3">
+              <h2 class="text-3xl font-extrabold tracking-tight">XIN CHÀO, LÂM PHẠM</h2>
+              <span class="h-6 w-6 rounded-full bg-pink-500 text-white text-xs grid place-items-center">✓</span>
+              <span class="text-xs bg-amber-50 text-amber-700 px-2.5 py-1 rounded-full">👑 Quản trị</span>
+            </div>
+            <p class="text-mute mt-1">Bảng điều khiển học tập và lịch dạy cá nhân.</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <button class="px-4 py-2 rounded-full border border-slate-200 bg-white text-sm">👤 Thêm học sinh</button>
+              <button class="px-4 py-2 rounded-full border border-slate-200 bg-white text-sm">＋ Tạo lớp học</button>
+              <button class="px-4 py-2 rounded-full border border-slate-200 bg-white text-sm">📋 Điểm danh</button>
+            </div>
+          </div>
+          <button class="px-4 py-2 rounded-full border border-slate-200 text-sm text-slate-600">Tháng: Tháng 9/2026 ▾</button>
+        </div>
+      </section>
+
+      <!-- KPIs -->
+      <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-5">
+        <article class="bg-white rounded-3xl p-5 shadow-soft flex items-center justify-between">
+          <div>
+            <div class="text-3xl font-bold text-orange-500">180</div>
+            <div class="text-sm text-mute mt-1">Học sinh đang theo học</div>
+          </div>
+          <div class="h-14 w-14 rounded-full ring-grad p-[3px]"><div class="h-full w-full rounded-full bg-white"></div></div>
+        </article>
+        <article class="bg-white rounded-3xl p-5 shadow-soft flex items-center justify-between">
+          <div>
+            <div class="text-3xl font-bold text-orange-500">7.035.000 đ</div>
+            <div class="text-sm text-mute mt-1">Tổng học phí phát sinh</div>
+          </div>
+          <div class="h-14 w-14 rounded-full ring-grad p-[3px]"><div class="h-full w-full rounded-full bg-white"></div></div>
+        </article>
+        <article class="bg-white rounded-3xl p-5 shadow-soft flex items-center justify-between">
+          <div>
+            <div class="text-3xl font-bold text-emerald-400">0 đ</div>
+            <div class="text-sm text-mute mt-1">Tổng học phí đã thu</div>
+          </div>
+          <div class="h-14 w-14 rounded-full ring-grad p-[3px]"><div class="h-full w-full rounded-full bg-white"></div></div>
+        </article>
+        <article class="bg-white rounded-3xl p-5 shadow-soft flex items-center justify-between">
+          <div>
+            <div class="text-3xl font-bold text-orange-400">0%</div>
+            <div class="text-sm text-mute mt-1">Tỷ lệ thu học phí</div>
+          </div>
+          <div class="h-14 w-14 rounded-full ring-grad p-[3px]"><div class="h-full w-full rounded-full bg-white"></div></div>
+        </article>
+      </section>
+
+      <section class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+        <!-- Schedule -->
+        <div class="bg-white rounded-3xl p-5 shadow-soft">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-semibold">Lịch dạy sắp tới</h3>
+            <button class="text-xs px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-600">Xem toàn bộ thời khoá biểu</button>
+          </div>
+
+          <div class="rounded-2xl border border-slate-100 p-4 mb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="font-medium">Lớp đã điểm danh hôm nay</div>
+                <div class="text-xs text-mute">Tổng hợp theo lượt buổi đã phát sinh điểm danh.</div>
+              </div>
+              <span class="text-xs px-2 py-1 rounded-full bg-slate-100">1 lớp</span>
+            </div>
+            <div class="mt-3 flex flex-wrap items-center justify-between gap-3 text-sm">
+              <div><span class="font-medium">Eng 4 NC</span> <span class="text-mute">07:30</span></div>
+              <div class="flex gap-2 text-xs">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Có mặt 17</span>
+                <span class="px-2 py-1 rounded-full bg-violet-50 text-violet-700">Vắng 0</span>
+                <span class="px-2 py-1 rounded-full bg-amber-50 text-amber-700">Có phép 0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-xs font-semibold text-slate-500 mb-2">HÔM NAY — THỨ 7 — 12/09</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-5">
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>09:00 – 10:30</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 3A</div>
+              <div class="text-xs text-mute">Chưa có nội dung</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>14:00 – 15:30</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 3B</div>
+              <div class="text-xs text-mute">Chưa có nội dung</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>15:30 – 17:00</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 4 NC</div>
+              <div class="text-xs text-mute">Lớp tiếng Anh 4 Nâng Cao</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+          </div>
+
+          <div class="text-xs font-semibold text-slate-500 mb-2">NGÀY MAI — CHỦ NHẬT — 13/09</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>07:30 – 09:00</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 2</div>
+              <div class="text-xs text-mute">Chưa có nội dung</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>09:00 – 10:30</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 9B</div>
+              <div class="text-xs text-mute">Chưa có nội dung</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+            <div class="rounded-2xl border border-slate-100 p-3">
+              <div class="flex justify-between text-xs text-mute"><span>14:00 – 15:30</span><span>Lớp học</span></div>
+              <div class="font-semibold mt-1">Eng 7A</div>
+              <div class="text-xs text-mute">Chưa có nội dung</div>
+              <button class="mt-2 text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Điểm danh</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revenue -->
+        <div class="space-y-5">
+          <div class="bg-white rounded-3xl p-5 shadow-soft">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-semibold">Doanh thu dự kiến hôm nay</h3>
+                <p class="text-xs text-mute">Tính theo lượt học sinh có mặt và học phí từng lớp.</p>
+                <div class="text-3xl font-bold mt-3">595.000 đ</div>
+              </div>
+              <div class="text-right text-xs text-mute">Ngày xem<br>12/09/2026</div>
+            </div>
+            <div class="mt-4 flex items-end justify-between gap-4">
+              <div class="flex-1 rounded-xl bg-slate-50 px-3 py-2 text-sm">
+                <div class="flex items-center gap-2">
+                  <span class="h-3 w-1.5 rounded bg-violet-400"></span>
+                  <span class="font-medium">Eng 4 NC</span>
+                  <span class="ml-auto">595.000 đ</span>
+                </div>
+                <div class="text-xs text-mute mt-1">07:30 — 17 có mặt · 0 vắng · 0 có phép</div>
+              </div>
+              <div class="flex items-end gap-1.5 h-20">
+                <div class="w-3 bg-violet-300 bar h-8"></div>
+                <div class="w-3 bg-indigo-300 bar h-10"></div>
+                <div class="w-3 bg-violet-400 bar h-9"></div>
+                <div class="w-3 bg-sky-300 bar h-12"></div>
+                <div class="w-3 bg-indigo-400 bar h-16"></div>
+                <div class="w-3 bg-violet-300 bar h-11"></div>
+                <div class="w-3 bg-sky-400 bar h-8"></div>
+              </div>
+            </div>
+            <div class="text-[11px] text-mute mt-2 text-right">17 lượt có mặt — 1 lớp — 1 buổi</div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-5 shadow-soft">
+            <h3 class="font-semibold">Doanh thu 12 tháng</h3>
+            <div class="text-3xl font-bold mt-1 mb-4">44.730.000 đ</div>
+            <div class="flex flex-wrap gap-2 mb-6 text-sm">
+              <button class="px-3 py-1.5 rounded-xl border border-slate-200">12 tháng ▾</button>
+              <button class="px-3 py-1.5 rounded-xl border border-slate-200">Biểu đồ cột ▾</button>
+              <button class="px-3 py-1.5 rounded-xl border border-slate-200">Năm 2026 ▾</button>
+            </div>
+            <div class="flex items-end justify-between h-36 gap-2">
+              <div class="flex-1 bg-violet-200 bar h-[28%]"></div>
+              <div class="flex-1 bg-sky-300 bar h-[32%]"></div>
+              <div class="flex-1 bg-violet-400 bar h-[48%]"></div>
+              <div class="flex-1 bg-indigo-300 bar h-[40%]"></div>
+              <div class="flex-1 bg-sky-400 bar h-[55%]"></div>
+              <div class="flex-1 bg-violet-300 bar h-[36%]"></div>
+              <div class="flex-1 bg-indigo-400 bar h-[50%]"></div>
+              <div class="flex-1 bg-violet-500 bar h-[92%] relative"><span class="absolute -top-5 left-1/2 -translate-x-1/2 text-[10px] text-mute">37.7tr</span></div>
+              <div class="flex-1 bg-pink-300 bar h-[38%] relative"><span class="absolute -top-5 left-1/2 -translate-x-1/2 text-[10px] text-mute">7.0tr</span></div>
+              <div class="flex-1 bg-sky-300 bar h-[30%]"></div>
+              <div class="flex-1 bg-indigo-300 bar h-[34%]"></div>
+              <div class="flex-1 bg-violet-300 bar h-[26%]"></div>
+            </div>
+            <div class="grid grid-cols-12 text-[10px] text-mute mt-2 text-center">
+              <span>0đ</span><span>0đ</span><span>0đ</span><span>0đ</span><span>0đ</span><span>0đ</span><span>0đ</span><span>37.7</span><span>7.0</span><span>0đ</span><span>0đ</span><span>0đ</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
